@@ -1,3 +1,5 @@
+export const revalidate = 60
+
 import { HomeCarousel } from '@/components/shared/home/home-carousel'
 import data from '@/lib/data'
 import { HomeCard } from '@/components/shared/home/home-card'

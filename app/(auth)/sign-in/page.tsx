@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation'
 import { auth } from '@/auth'
 import SeparatorWithOr from '@/components/shared/separator-or'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-
+import { GoogleSignInForm } from './google-signin-form'
 import CredentialsSignInForm from './credentials-signin-form'
 import { Button } from '@/components/ui/button'
 import { APP_NAME } from '@/lib/constants'
@@ -37,6 +37,10 @@ export default async function SignIn(props: {
         <CardContent>
           <div>
             <CredentialsSignInForm />
+          </div>
+          <SeparatorWithOr />
+          <div className='mt-4'>
+            <GoogleSignInForm />
           </div>
         </CardContent>
       </Card>

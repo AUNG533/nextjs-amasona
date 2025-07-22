@@ -491,11 +491,11 @@ import {
 import ThemeSwitcher from './theme-switcher'
 -export default function Menu() {
 const Menu = ({ forAdmin = false }: { forAdmin?: boolean }) => {
--      <nav className='flex gap-3 w-full'>
+
       <nav className='md:flex gap-3 hidden w-full'>
         <ThemeSwitcher />
--
--        <CartButton />
+        <UserButton />
+        <CartButton />
         {forAdmin ? null : <CartButton />}
       </nav>
       <nav className='md:hidden'>

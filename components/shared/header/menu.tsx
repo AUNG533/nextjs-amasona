@@ -16,7 +16,8 @@ const Menu = ({ forAdmin = false }: { forAdmin?: boolean }) => {
     <div className='flex justify-end'>
       <nav className='md:flex gap-3 hidden w-full'>
         <ThemeSwitcher />
-
+        <UserButton />
+        {/* Show CartButton only if not in admin mode */}
         {forAdmin ? null : <CartButton />}
       </nav>
       <nav className='flex gap-3 w-full'>
